@@ -1,11 +1,11 @@
-# Remaining Tasks
-
-## Installation
+# Installation
 ```
 python -m venv venv (optional)
 venv\Scripts\activate (optional)
 pip install -r requirements.txt
 ```
+
+# Remaining Tasks
 
 ## 1. Member 1: Data Understanding & Cleaning
 The files `src/loader.py` and `src/cleaning.py` exist but are currently **skeletons/placeholders**.
