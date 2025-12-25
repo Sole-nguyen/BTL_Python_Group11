@@ -15,27 +15,23 @@ CHARTS_DIR = 'charts'
 
 def main():
     print_separator('=', 60)
-    print("      BTL Python Group 11 - AI Developer Performance      ")
+    print("      Group 11 - AI Developer Performance      ")
     print_separator('=', 60)
 
-    # 1. Load Data (Member 1)
     try:
         df = load_data(DATA_PATH)
     except Exception as e:
         print("Failed to load data. Exiting.")
         return
 
-    # 2. Clean Data (Member 1)
     df_clean = clean_data(df)
 
-    # 3. Transform Data (Member 2)
-    print("\n--- Transforming Data (Member 2 Task) ---")
+    print("\n--- Transforming Data ---")
     df_processed, df_original = process_data(df_clean)
     print("Transformation complete.")
     print(f"Processed DataFrame Shape: {df_processed.shape}")
     
-    # 4. Visualize Data (Member 2)
-    print("\n--- Visualizing Data (Member 2 Task) ---")
+    print("\n--- Visualizing Data ---")
     plot_data(df_original, df_processed, save_dir=CHARTS_DIR)
     print("Visualization processing complete.")
 

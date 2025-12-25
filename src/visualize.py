@@ -6,14 +6,6 @@ import os
 import pandas as pd
 
 def plot_data(df_original, df_processed, save_dir='charts'):
-    """
-    Generates and saves visualizations.
-    
-    Args:
-        df_original (pd.DataFrame): Dataframe with features (unscaled).
-        df_processed (pd.DataFrame): Processed dataframe (scaled).
-        save_dir (str): Directory to save charts.
-    """
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
         
